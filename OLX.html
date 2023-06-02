@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logox.jpg">
+    <title>OLX - Free classifieds in India, Buy and Sell for free anywhere in India with OLX Online Classified Advertising</title>
+    <link rel="stylesheet" href="OLX.css">
+    <link rel="stylesheet" href="oxl.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="head">
+     <header>
+            <div class="icon">
+                <img src="iconoxl.jpg" alt="no" class="icon">
+            </div>
+
+            <div class="location" id="country">
+                <div class="select">
+                    <p id="text" style="padding-top: 17px;color: rgb(117, 112, 112);">SELECT YOUR LOCATION</p>
+                    <i class="fa-solid fa-chevron-down" id="moving" style="padding-bottom: 1px;padding-right: 8px;"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('KERALA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>KERALA</p></li>
+                    <li class="option" onclick="myfunction('DELHI')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>DELHI</p></li>
+                    <li class="option" onclick="myfunction('KOLKATA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>KOLKATA</p></li>
+                    <li class="option" onclick="myfunction('PUNJAB')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>PUNJAB</p></li>
+                </ul>
+            </div> 
+
+              <div class="input-container">
+                <input type="text" placeholder="Find Cars, Mobile Phones and more...">
+                <button type="submit">
+                    <img src="s3.jpg" alt="" width="23px" height="23px" class="s3">
+                </button>
+              </div> 
+              <div class="lang">
+                <select name="lang" id="drop">
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="HINDI">हिंदी</option>
+                </select>
+                <button id="b22">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg></button> 
+              </div> 
+
+              <div class="log">
+                <a href="#" id="login">Login</a>
+              </div>
+              <div class="sell">
+                <button class="sell-button">
+                    <img src="OLXicon.jpg" alt="" width="90px">
+                  </button>
+              </div>            
+      </header>
+    </div>
+
+    <div class="container-fluid">
+        <div class="all">
+          <span class="allc">ALL CATEGORIES</span>
+          <button id="b2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg></button> 
+        </div>
+        <div class="container">
+          <div><a href="#" id="it">Cars</a></div>
+          <div><a href="#" id="it">Motorcycles</a></div>
+          <div><a href="#" id="it">Mobile Phones</a></div>
+          <div><a href="#" id="it">For Sale: Houses & Apartments</a></div>
+          <div><a href="#" id="it">Scooters</a></div>
+          <div><a href="#" id="it">Commercial & Other Vehicles</a></div>
+          <div><a href="#" id="it">For Rent: Houses & Apartments</a></div>
+        </div> 
+      </div> 
+
+  <div class="add">
+      <!-- <div style="width:1263.33px;"> -->
+      <img src="add.jpg" alt="no" width="1263.33px">
+      <button id="badd">Sell Car</button>
+      <!-- </div> -->
+  </div>
+
+  <div class="add2">
+    <img src="add4.jpg" alt="" width="1000px" id="add32">
+  </div>
+
+<div class="cart">
+ <div class="fr" >
+  <span>Fresh recommendations</span>
+ </div>
+</div>
+
+<div class="gallery" style="padding: 10px;">
+  <a href="img1.html" style="text-decoration: none;width: 300px;height: 300px;"><div class="img1" style="cursor: pointer;">
+     <div class="img21">
+         <button class="heart">
+            <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+         </button></div>
+     <div class="img11" >
+         <img src="phn.jpg" alt="" id="lap" width="200px" height="190px" >
+     </div>
+     <div class="imgd1">
+         <div style="font-size: 22px; font-weight: bold;color: black; ">₹ 9,000</div>
+       <div style="font-size: 15px;color: gray;">Vivo v20 pro 6/128</div>
+         <div class="pd">
+             <div class="place" style="font-size: 12px; color: gray;"></div>
+             <div class="date" style="font-size: 12px; color: gray;">Feb 15</div>
+         </div>
+     </div>
+  </div></a>
+
+  <a href="img2.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="sofa.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold;color: black; ">₹ 1,999</div>
+    <div style="font-size: 15px;color: gray;">5 seater sofa with wooden table</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Pratap Nagar, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Today</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img3.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="car.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold;color: black; "><span class="_2Ks63" data-aut-id="itemPrice">₹ 7,75,000</span></div>
+    <div style="font-size: 15px;color: gray;">Mahindra XUV500 W6 2WD, 2017, Diesel</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Rohini Sector 7, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Feb 18</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img4.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="chair.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold; color: black;">₹ 3,000</div>
+    <div style="font-size: 15px;color: gray;">Office chair</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Brahmpuri, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Jan 0</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img5.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="paint.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold; color: black;">₹ 875</div>
+    <div style="font-size: 15px;color: gray;">Art work and painting</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Ghaffar Manzil Colony, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Feb 08</div>
+      </div>
+  </div>
+</div></a>
+
+<div class="img1" style="cursor: pointer; border: none;">
+  <img src="blue1.JPG" alt="" width="300px" height="300px">
+</div>
+
+<a href="img6.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="tv.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold;color: black; ">₹ 10,999</div>
+    <div style="font-size: 15px;color: gray;">42 inch smart android led tv//fully </div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Dr Mukherjee Nagar, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Today</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img7.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="fridge.pg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold;color: black; ">₹ 12,000</div>
+    <div style="font-size: 15px;color: gray;">Lg double door</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Jahangirpuri, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">2days ago</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img8.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="flat.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold; color: black;">₹ 21,78,000</div>
+    <div style="font-size: 15px;color: gray;">SUPER 2 ' BHK' FLATS '' with 90%:</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Kashmere Gate, Delhi</div>
+          <div class="date" style="font-size: 12px; color: gray;">Today</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img9.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="bean.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold;color: black; ">₹ 1,499</div>
+    <div style="font-size: 15px;color: gray;">Bean chair with beans high quality beans.</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Vallapuzha, Shoranur</div>
+          <div class="date" style="font-size: 12px; color: gray;">4days ago</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img10.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+  <div class="img21">
+      <button class="heart">
+        <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+      </button></div>
+  <div class="img11">
+      <img src="shoe.jpg" alt="" id="lap" width="200px" height="190px">
+  </div>
+  <div class="imgd1">
+      <div style="font-size: 22px; font-weight: bold; color: black;">₹ 1,499</div>
+    <div style="font-size: 15px;color: gray;">Mens shoes</div>
+      <div class="pd">
+          <div class="place" style="font-size: 12px; color: gray;">Vaniyamkulam II</div>
+          <div class="date" style="font-size: 12px; color: gray;">7days ago</div>
+      </div>
+  </div>
+</div></a>
+
+<a href="img11.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+    <div class="img21">
+        <button class="heart">
+          <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+        </button></div>
+    <div class="img11">
+        <img src="watch.jpg" alt="" id="lap" width="200px" height="190px">
+    </div>
+    <div class="imgd1">
+        <div style="font-size: 22px; font-weight: bold; color: black;">₹ 9,999</div>
+      <div style="font-size: 15px;color: gray;">Apple Series 8 watch plus Apple Airpods </div>
+        <div class="pd">
+            <div class="place" style="font-size: 12px; color: gray;">SARITA VIHAR, DELHI</div>
+            <div class="date" style="font-size: 12px; color: gray;">Today</div>
+        </div>
+    </div>
+  </div></a>
+
+  <a href="img12.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+    <div class="img21">
+        <button class="heart">
+          <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+        </button></div>
+    <div class="img11">
+        <img src="music.jpg" alt="" id="lap" width="200px" height="190px">
+    </div>
+    <div class="imgd1">
+        <div style="font-size: 22px; font-weight: bold; color: black;">₹ 8,000</div>
+      <div style="font-size: 15px;color: gray;">Music instrument set</div>
+        <div class="pd">
+            <div class="place" style="font-size: 12px; color: gray;">Vishal Gaon, Gangtok</div>
+            <div class="date" style="font-size: 12px; color: gray;">Yesterday</div>
+        </div>
+    </div>
+  </div></a>
+
+  <a href="img13.html" style="text-decoration: none;"><div class="img1" style="cursor: pointer;">
+    <div class="img21">
+        <button class="heart">
+          <i class="fa-sharp fa-regular fa-heart" width="26" height="26" fill="currentColor"viewBox="0 0 18 18"></i>
+        </button></div>
+    <div class="img11">
+        <img src="bullet.jpg" alt="" id="lap" width="200px" height="190px">
+    </div>
+    <div class="imgd1">
+        <div style="font-size: 22px; font-weight: bold; color: black;">₹ 1,95,000</div>
+      <div style="font-size: 15px;color: gray;">Bullet classic 350 stealth black year 2020</div>
+        <div class="pd">
+            <div class="place" style="font-size: 12px; color: gray;">Kukatpally, Hyderabad</div>
+            <div class="date" style="font-size: 12px; color: gray;">Today</div>
+        </div>
+    </div>
+  </div></a>
+</div>
+
+<div class="load">
+   <button class="lm">Load more</button>
+</div>
+
+<div class="dadd">
+  <img src="dad.jpg" alt="" width="1000px" id="dadd1">
+</div>
+
+<div class="last">
+  <img src="la2.jpg" alt="" width="1263.33px" id="last1">
+</div>
+
+<div class="foot">
+  <div class="pop">
+    <ul><h6>POPULAR LOCATIONS</h6>
+      <li>Kolkata</li>
+      <li>Mumbai</li>
+      <li>Chennai</li>
+      <li>Pune</li>
+    </ul>
+  </div>
+
+  <div class="trend">
+    <ul><h6>TRENDING LOCATIONS</h6>
+      <li>Bhubaneshwar</li>
+      <li>Hyderabad</li>
+      <li>Chandigarh</li>
+      <li>Nashik</li>
+    </ul>
+  </div>
+
+  <div class="about">
+    <ul><h6>ABOUT US</h6>
+      <li>About OLX Group</li>
+      <li>Careers</li>
+      <li>Contact Us</li>
+      <li>OLXPeople</li>
+      <li>Waah Jobs</li>
+    </ul>
+  </div>
+
+  <div class="olx">
+    <ul><h6>OLX</h6>
+      <li>Help</li>
+      <li>Sitemap</li>
+      <li>Legal & Privacy information</li>
+      <li>Blog</li>
+      <li>OLX Autos Sell Car</li>
+    </ul>
+  </div>
+
+  <div class="follow">
+    <span><h6>FOLLOW US</h6></span>
+    <div class="sy">
+    <button id="sy1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg></button> 
+    <button id="sy1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg></button>
+    <button id="sy1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </svg></button>
+    <button id="sy1"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+    </svg></button> 
+  </div>
+    <div class="app">
+      <img src="app-store-badge.png" alt="" width="93px" height="25px">
+      <img src="google-play-badge.png" alt="" width="93px" height="25px">
+    </div>
+</div>
+</div>
+
+<div class="end">
+  <div class="end1">
+    <div class="e2" style="font-size: 13px; color: white;font-weight: bold;">Other countries</div>
+    <div class="e3" style="font-size: 12px; color:white;">All rights reserved © 2006-2023 OLX</div>
+    <div class="e4" style="font-size: 12px; color:white;cursor: pointer;">Indonesia-Pakistan-South Africa</div>
+</div>
+
+</div>
+<script>
+  let country=document.getElementById('country');
+  let moving=document.getElementById('moving');
+  let text=document.getElementById('text');
+  let list=document.getElementById('list');
+
+  country.addEventListener('click',()=>{
+      list.classList.toggle('hidden');
+      moving.classList.toggle('roted')
+  });
+  function myfunction(KERALA)
+  {
+      text.innerHTML=KERALA;
+  }
+</script>
+
+
+</body>
+</html>

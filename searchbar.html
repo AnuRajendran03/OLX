@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logox.jpg">
+    <title>OLX - Free classifieds in India, Buy and Sell for free anywhere in India with OLX Online Classified Advertising</title>
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="oxl.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="head">
+     <header>
+            <div class="icon">
+                <img src="iconoxl.jpg" alt="no" class="icon">
+            </div>
+
+            <div class="location" id="country">
+                <div class="select">
+                    <p id="text" style="padding-top: 8px;">Select Your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="moving" style="padding-bottom: 3px;"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('KERALA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>KERALA</p></li>
+                    <li class="option" onclick="myfunction('DELHI')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>DELHI</p></li>
+                    <li class="option" onclick="myfunction('KOLKATA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>KOLKATA</p></li>
+                    <li class="option" onclick="myfunction('PUNJAB')">
+                        <i class="fa-solid fa-location-dot"></i>
+                    <p>PUNJAB</p></li>
+                </ul>
+            </div> 
+
+              <div class="input-container">
+                <input type="text" placeholder="Find Cars, Mobile Phones and more...">
+                <button type="submit">
+                    <img src="s3.jpg" alt="" width="23px" height="23px" class="s3">
+                </button>
+              </div> 
+              <div class="lang">
+                <select name="lang" id="drop">
+                    <option value="ENGLISH">ENGLISH</option>
+                    <option value="HINDI">हिंदी</option>
+                </select>
+                <button id="b22">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg></button> 
+              </div> 
+
+              <div class="log">
+                <a href="#" id="login">Login</a>
+              </div>
+              <div class="sell">
+                <button class="sell-button">
+                    <img src="OLXicon.jpg" alt="" width="90px">
+                  </button>
+              </div>            
+      </header>
+    </div>
+    <script>
+        let country=document.getElementById('country');
+        let moving=document.getElementById('moving');
+        let text=document.getElementById('text');
+        let list=document.getElementById('list');
+
+        country.addEventListener('click',()=>{
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(KERALA)
+        {
+            text.innerHTML=KERALA;
+        }
+    </script>
+</body>
+</html>
